@@ -1,0 +1,37 @@
+1. 작업할 영역에서 gitBash 실행
+2. git init. -> .git이라는 숨겨진 파일 생성
+3. 샘플파일 생성
+* git status -> Untracked files: 관리되지 않은 파일
+4. git add . -> 인덱스로 생성(트리,블롭 생성)
+*  git status -> Changes to be committed:
+* 최초설정 
+$ git config --global user.name "SEO"
+$ git config --global user.email "sgr4244@gmail.com"
+5. git commit -m "메세지" -> 커밋
+6. git log -> 로그
+
+reset : $git reset --soft 해쉬값
+- soft :
+- mixed :
+- hard :
+
+git reflog : 커밋에 대한 로그
+git checkout topic/master , git checkout -b topic
+touch 파일이름.txt
+
+git rebase -i HEAD~n
+
+git remote add origin url -> 연결 
+git ls-remote 연결확인
+git push origin master 업로드
+git remote rm origin 연결삭제
+git pull origin master 다운로드
+
+pull : 다운로드 + 병합
+push : 업로드 + 병합
+
+git clone = git init,remote,pull
+git clone https://github.com/gyeongryun1/myapp.git
+
+git fetch origin 모든 브랜치 다운로드
+git checkout -b topic origin/topic 브랜치 생성 및 머지
